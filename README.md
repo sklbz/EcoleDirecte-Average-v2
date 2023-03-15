@@ -1,7 +1,7 @@
 # EcoleDirecte-Average
 <p>Web extension to get your ED average</p>
 <h2>Features</h2>
-<img src="example.png">
+<img src="./example.png">
 <h2>How to install the extension</h2>
 <h3>With Chrome</h3>
 <p> - Save the folder <a href="https://github.com/augustin7698/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
