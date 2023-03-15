@@ -12,7 +12,8 @@
 <p> - select the <code>ED-average</code> folder.</p>
 <p> - open <a href="https://www.ecoledirecte.com" target="_blank">EcoleDirecte</a>.</p>
 <h3>With Firefox</h3>
-<p> - Go to the page https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/</p>
+<p> - Go to the extension <a href="https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/">page</a></p>
+<p> - Click on install and allow everything</p>
 <h2>How it work</h2>
 <p> - the <code>manifest.json</code> is the setting file to coordonate all file.</p>
 <p> - the <code>style.css</code> is the file that allow the layout of the inserted element.</p>
