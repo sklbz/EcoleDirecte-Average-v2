@@ -4,7 +4,7 @@
 <img src="./demo.png">
 <h2>How to install the extension</h2>
 <h3>With Chrome</h3>
-<p> - Save the folder <a href="https://github.com/augustin7698/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
+<p> - Save the folder <a href="https://github.com/sklbz/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
 <p> - Unzip it (right click then extract all).</p>
 <p> - Open the url <code>chrome://extensions</code> in your browser.</p>
 <p> - active the developper mode (button on top right).</p>
@@ -12,7 +12,7 @@
 <p> - select the <code>ED-average</code> folder.</p>
 <p> - open <a href="https://www.ecoledirecte.com" target="_blank">EcoleDirecte</a>.</p>
 <h3>With Firefox</h3>
-<p> - Go to the extension <a href="https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/">page</a></p>
+<p> - Go to the <a href="https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/">extension page</a></p>
 <p> - Click on install and allow everything</p>
 <h2>How it work</h2>
 <p> - the <code>manifest.json</code> is the setting file to coordonate all file.</p>
@@ -21,7 +21,7 @@
 <p> - the <code>chart.js</code> is the file that generate the chart of your notes.</p>
 <br />
 <h2>Comment installer l'extension</h2>
-<p> - Sauvegarde le dossier <a href="https://github.com/augustin7698/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
+<p> - Sauvegarde le dossier <a href="https://github.com/sklbz/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
 <p> - Dézipe le dossier (click droit puis extraire tout).</p>
 <p> - Ouvre l'url <code>chrome://extensions</code> dans ton navigateur.</p>
 <p> - active le mode developper (bouton en haut à droite).</p>
