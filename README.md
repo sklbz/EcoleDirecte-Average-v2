@@ -1,8 +1,9 @@
 # EcoleDirecte-Average
-<p>Chrome extension to get your ED average</p>
+<p>Web extension to get your ED average</p>
 <h2>Features</h2>
 <img src="example.png">
 <h2>How to install the extension</h2>
+<h3>With Chrome</h3>
 <p> - Save the folder <a href="https://github.com/augustin7698/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
 <p> - Unzip it (right click then extract all).</p>
 <p> - Open the url <code>chrome://extensions</code> in your browser.</p>
@@ -10,6 +11,8 @@
 <p> - click to <code>load unpacked</code>.</p>
 <p> - select the <code>ED-average</code> folder.</p>
 <p> - open <a href="https://www.ecoledirecte.com" target="_blank">EcoleDirecte</a>.</p>
+<h3>With Firefox</h3>
+<p> - Go to the page https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/</p>
 <h2>How it work</h2>
 <p> - the <code>manifest.json</code> is the setting file to coordonate all file.</p>
 <p> - the <code>style.css</code> is the file that allow the layout of the inserted element.</p>
