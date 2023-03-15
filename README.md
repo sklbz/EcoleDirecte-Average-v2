@@ -21,7 +21,7 @@
 <p> - the <code>chart.js</code> is the file that generate the chart of your notes.</p>
 <br />
 <h2>Comment installer l'extension</h2>
-<p> - Sauvegarde le dossier <a href="https://github.com/sklbz/EcoleDirecte-Average/raw/main/ED-Average.zip">ED-average</a>.</p>
+<p> - Sauvegarde le dossier <a href="https://github.com/sklbz/EcoleDirecte-Average-v2/raw/main/ED-average.zip">ED-average</a>.</p>
 <p> - Dézipe le dossier (click droit puis extraire tout).</p>
 <p> - Ouvre l'url <code>chrome://extensions</code> dans ton navigateur.</p>
 <p> - active le mode developper (bouton en haut à droite).</p>
