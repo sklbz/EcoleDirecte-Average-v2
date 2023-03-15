@@ -1,10 +1,14 @@
+/*
+*	This function creates and displays a chart of the evolution of grades and adds columns for the averages.
+*	It also removes any unnecessary columns and rows from the table.
+*/
 function column(CreateAverageCol) {
 
-    // afficher la graphique d'évolution des notes
+    // Display the chart of grades evolution
 	document.getElementsByClassName("bloc-legende")[0].remove()
 	document.getElementById("encart-notes").innerHTML += "<div id='flex'><div class='bloc-legende clear hidden-print ng-star-inserted' style='grid-row: initial;'><div class='col-md-6 ng-star-inserted'><table><caption>Légende des notes</caption><tbody><tr><td style='width: 70px;'> note <sup>(x)</sup></td><td>Note coefficientée</td></tr><tr><td> note <sub>/X</sub></td><td>Note sur X</td></tr><tr><td>(note)</td><td>Note non significative</td></tr><tr><td><span class='newNote'>note</span></td><td>Nouvelle note</td></tr><!----><tr><td><span class='note-examen-blanc'>note</span></td><td>Examen blanc</td></tr><tr><td>Abs</td><td>Absent</td></tr><tr><td>Disp</td><td>Dispensé</td></tr><tr><td>NE</td><td>Non évalué</td></tr><tr><td>EA</td><td>En attente</td></tr></tbody></table></div></div><canvas id='graphic'></canvas></div>";
     
-	// créer les colonnes des moyennes
+    // Create columns for the averages
     if (CreateAverageCol) {
         for (var i = document.getElementsByClassName("notes").length - 1; i > 0; i--) {
             document.getElementsByClassName("notes")[i].parentElement.innerHTML = document.getElementsByClassName("notes")[i].parentElement.innerHTML + "<td class=\"average\"></td>";
@@ -12,12 +16,12 @@ function column(CreateAverageCol) {
         document.getElementsByClassName("notes")[0].parentElement.innerHTML = document.getElementsByClassName("notes")[0].parentElement.innerHTML + "<th>Moyennes</th>";
     }
 
-    // supprimer les colonnes graph
+    // Remove graph columns
     for (var i = document.getElementsByClassName("graph").length -1; i >= 0; i--) {
         document.getElementsByClassName("graph")[i].style.display = "none";
     }
     
-    // effacer les lignes sans notes
+   // Remove rows without grades
 	for (n = document.getElementsByClassName('discipline').length - 1; n >= 1; n--) {
 		if (document.getElementsByClassName('discipline')[n].parentElement.getElementsByClassName("notes")[0].innerText == "") {
 			if (document.getElementsByClassName('discipline')[n].classList.contains("sousmatiere")) { // si c'est une sous-matiere
@@ -33,12 +37,16 @@ function column(CreateAverageCol) {
     }
 }
 
+/**
+*	This function retrieves the grades of all subjects and calculates their averages.
+*	It also adds the coefficient of each subject and some graphics are drawn for each note.
+*/
 function getMoyenne() {
 	notes = {};
 	everynotes = {};
 	l = 0;
 
-	// rajouter une entrée numérique pour les coefficient
+	// add a numerical entry for coefficients
 	for (let i =0; i < document.querySelectorAll("td.discipline").length; i++) {
 		if (document.querySelectorAll('td.discipline')[i].lastChild.classList?.contains("coef")){
 			break;
@@ -48,7 +56,7 @@ function getMoyenne() {
 		} 
 	}
 
-    // determiner constEvalPos => positions du tableau des notes
+    // constEvalPos => find the position of the table columns for evaluations and averages
     x = 0;
     while (document.getElementsByClassName('discipline')[0].parentElement.children[x]) {
         if (document.getElementsByClassName('discipline')[0].parentElement.children[x].innerText == "EVALUATIONS") {
@@ -254,7 +262,7 @@ function getMoyenne() {
 
 function getMoyenneWME() {
 
-    // calculer la moyenne générale puis l'afficher
+    // calculates and displays the general average of the student's grades.
     total = 0;
     effectif = 0;
     for (i = document.getElementsByClassName("relevemoyenne").length - 1; i >= 0; i--) {
