@@ -4,7 +4,7 @@
 <img src="./demo.png">
 <h2>How to install the extension</h2>
 <h3>With Chrome</h3>
-<p> - Save the folder <a href="[ED-average.zip](https://github.com/sklbz/EcoleDirecte-Average-v2/raw/main/ED-average.zip)">ED-average</a>.</p>
+<p> - Save the folder <a href="https://github.com/sklbz/EcoleDirecte-Average-v2/raw/main/ED-average.zip">ED-average</a>.</p>
 <p> - Unzip it (right click then extract all).</p>
 <p> - Open the url <code>chrome://extensions</code> in your browser.</p>
 <p> - active the developper mode (button on top right).</p>
