@@ -264,16 +264,18 @@ function getMoyenneWME() {
 
     // calculates and displays the general average of the student's grades.
     total = 0;
-    effectif = 0;
-    for (i = document.getElementsByClassName("relevemoyenne").length - 1; i >= 0; i--) {
-        note = Number(document.getElementsByClassName("relevemoyenne")[i].innerText.replace(",", "."));
-        if (note == note && document.getElementsByClassName("relevemoyenne")[i].innerText != "") {
-            total += note;
-            effectif += 1;
-        }
-    }
-    GlobalAverage = total / effectif;
-    display(GlobalAverage);
+	effectif = 0;
+	let inputNumber = 0;
+	for (i = document.getElementsByClassName("relevemoyenne").length - 1; i >= 0; i--) {
+		note = Number(document.getElementsByClassName("relevemoyenne")[i].innerText.replace(",", "."))*$$("input.coef")[inputNumber].value;
+		if (note == note && document.getElementsByClassName("relevemoyenne")[i].innerText != "") {
+			inputNumber++;
+			total += note;
+			effectif += $$("input.coef")[i].value;
+		}
+	}
+	GlobalAverage = total / effectif;
+	display(GlobalAverage);
 
     notes = {};
 	everynotes = {};
