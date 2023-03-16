@@ -181,6 +181,7 @@ function getMoyenne() {
 			}
 			total += (((Object.values(Object.values(notes)[i])[0] || 0) + (Object.values(Object.values(notes)[i])[1] || 0)) / qutnt)*parseFloat(document.querySelectorAll("input.coef")[inputNumber].value);
 			effectif += parseFloat(document.querySelectorAll("input.coef")[inputNumber].value);
+			inputNumber++;
 		}
 	}
 	GlobalAverage = (total / effectif) * 20;
@@ -269,9 +270,9 @@ function getMoyenneWME() {
 	for (i = document.getElementsByClassName("relevemoyenne").length - 1; i >= 0; i--) {
 		note = Number(document.getElementsByClassName("relevemoyenne")[i].innerText.replace(",", "."))*$$("input.coef")[inputNumber].value;
 		if (note == note && document.getElementsByClassName("relevemoyenne")[i].innerText != "") {
-			inputNumber++;
 			total += note;
-			effectif += $$("input.coef")[i].value;
+			effectif += $$("input.coef")[inputNumber].value;
+			inputNumber++;
 		}
 	}
 	GlobalAverage = total / effectif;
