@@ -15,7 +15,7 @@
 <p> - Go to the <a href="https://addons.mozilla.org/fr/firefox/addon/ed-average-v2/" target="_blank">extension page</a></p>
 <p> - Click on install and allow everything</p>
 <h3>With Edge</h3>
-<p> - Save the folder <a href="https://github.com/sklbz/EcoleDirecte-Average-v2/raw/main/ED-average">ED-average</a>.</p>
+<p> - Save the folder <a href="https://github.com/sklbz/EcoleDirecte-Average-v2/raw/main/ED-average.zip">ED-average</a>.</p>
 <p> - Unzip it (right click then extract all).</p>
 <p> - Open the url <code>edge://extensions/</code> in your browser.</p>
 <p> - active the developper mode (button on middle left).</p>
