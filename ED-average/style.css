@@ -52,9 +52,9 @@
 	padding: 10px;
 }
 
-input.coef{
-	margin-left: 5px;
-	width: 15%;
+.coef{
+	margin-left: 3px;
+    	width: 10%;
 }
 
 @keyframes load {
