@@ -42,7 +42,7 @@
 <p> - Dézipe le dossier (click droit puis extraire tout).</p>
 <p> - Ouvre l'url <code>edge://extensions</code> dans ton navigateur.</p>
 <p> - active le mode developper (bouton au milieu à gauche).</p>
-<p> - click sur <code>Chargez l'extension non empaquetée</code>.</p>
+<p> - click sur <code>Chargez l'extension décompressée</code>.</p>
 <p> - selectionne le dossier <code>ED-average</code>.</p>
 <p> - ouvre <a href="https://www.ecoledirecte.com" target="_blank">EcoleDirecte</a>.</p>
 <h3>Avec Firefox</h3>
